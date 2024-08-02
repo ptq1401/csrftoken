@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Khojki", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  position: relative;
+  height: 100vh;
+  background-image: url("../public/bg_web.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 850px) {
+  #root {
+    position: relative;
+    height: 100vh;
+    background-image: url("../public/bg_ipad.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  #root {
+    position: relative;
+    height: 100vh;
+    background-image: url("../public/bg_phone.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
